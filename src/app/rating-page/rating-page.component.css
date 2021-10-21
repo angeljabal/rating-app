@@ -1,0 +1,39 @@
+p{
+    font-size: 12px; 
+    text-align: justify
+}
+
+.selected{
+    color: orange;
+    transform: scale(1.5)
+}
+
+.unselected{
+    color: #ddd
+}
+
+.star-rating-animation:hover .star-hover{
+    color: orange
+
+}
+.star-rating-animation .star-hover:hover ~ .star-hover{
+    color: #ddd
+
+}
+
+.star-rating-animation .star-hover:hover{
+    transform: scale(1.5)
+}
+
+img{
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px rgb(66, 66, 66);
+}
+
+.card{
+    box-shadow: 3px 3px 30px rgba(255, 81, 81, 0.699);
+}
+
+.card-header{
+    background-color: rgb(104, 0, 0);
+}

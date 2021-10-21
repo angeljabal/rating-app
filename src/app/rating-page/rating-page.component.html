@@ -1,0 +1,36 @@
+<div class="card">
+  <div class="card-header m-2">
+      <h2 class="card-title text-white">{{title}}</h2>
+  </div>
+  <div class="card-body">
+      <div class="row">
+          <div class="col-md-auto">
+            <img src="../../assets/images/my-name.jpg" alt="my-name" style="width: 250px;">
+          </div>
+          <div class="col m-2">
+              <h4>PLOT</h4>
+              <p>
+                “My Name” is about a woman who joins an organized crime ring and infiltrates the police as an undercover agent in order to find out the truth about her father’s death. <br><br>
+
+                Yoon Ji Woo, the member of the organized crime ring who goes undercover as a police officer and harbors cold revenge in her heart. Choi Moo Jin, the boss of Dong Cheon Pa, the biggest drug ring in Korea. He helps Yoon Ji Woo go undercover through various methods, but his true motives are not easy to read. <br><br>
+                
+                Jeon Pil Do, a police detective in the Drug Investigation Unit. He is a stickler for rules who becomes Yoon Ji Woo’s partner when she joins the police. Cha Gi Ho, the team leader of the Drug Investigation Unit. He and Choi Moo Jin have long been enemies, with Cha Gi Ho vowing to take down his crime ring before he retires. <br><br>
+                
+                Jung Tae Joo, Choi Moo Jin’s subordinate in the drug ring. Because of his steadfast loyalty, he is Choi Moo Jin’s most trusted henchman. Do Kang Jae, a former member of the drug ring. After causing problems and getting kicked out of the gang, he vowed revenge against them.
+              </p>
+              <div class="row">
+                  <div class="col-2">
+                    <h5>Rating:</h5>
+                  </div>
+                  <div class="col-7 star-rating-animation">
+                      <span *ngFor="let rating of ratings" [ngClass]="[rating.class]" (click)="ratingSelect(rating.id)">
+                      </span>
+                  </div>
+                  <div class="col-3">
+                      <h5>{{selectedRating}} out of 5</h5>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
